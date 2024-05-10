@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cvs on devo</title>
+    <link>http://localhost:1313/cv/</link>
+    <description>Recent content in Cvs on devo</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 May 2024 23:54:05 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/cv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cv</title>
+      <link>http://localhost:1313/cv/cv/</link>
+      <pubDate>Fri, 10 May 2024 23:54:05 +0200</pubDate>
+      <guid>http://localhost:1313/cv/cv/</guid>
+      <description>Summary Dynamic and innovative iOS Developer with over 4 years of experience in designing and building user-centric mobile applications. Expertise in Swift, Python, and JavaScript, with a solid foundation in UI/UX design principles. Adept at leading development teams and projects, as demonstrated by successful app launches and significant improvements in app performance metrics. Committed to leveraging the latest technologies to deliver exceptional user experiences.&#xA;Technical Skills Languages: Swift (4 years), Python (1 year), JavaScript (1 year), C++ Development Software: Xcode (4 years), Git (4 years) Technologies: RESTful services (4 years), UIKit (4 years), SwiftUI (2 years), HealthKit, StoreKit, AVFoundation, AVKit, FastAPI, NodeJS Platforms: Mac OS (10+ years), UNIX/Linux (5 years) Cloud Services: Firebase (Cloud Functions, Firestore Database, Realtime Database, Crashlytics) Work Experience Sr.</description>
+    </item>
+  </channel>
+</rss>

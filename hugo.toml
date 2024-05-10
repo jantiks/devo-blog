@@ -1,0 +1,28 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'devo'
+theme = "paper"
+
+[params]
+  author = "Tigran Arsenyan"
+  description = "A blog created with Hugo Paper theme"
+  dateFormat = "2006-01-02"
+  showAuthor = true
+  showWordCount = true
+
+  # header social icons
+  github = 'jantiks' 
+  linkedin = 'tigran-arsenyan-754bb71b6'
+
+  # home page profile
+  avatar = 'HAVATAR_EMAIL'                 # gravatar email or image url
+  name = 'Tigran'
+  bio = "This is my personal blog. I am an iOS developer and a bachelor's student studying theoretical computer science at Charles University."
+
+
+
+
+[[menu.main]]
+  name = "CV"
+  url = "/cv/"
+  weight = 2
