@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on devo</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>//localhost:1313/posts/</link>
     <description>Recent content in Posts on devo</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 May 2024 23:06:51 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/posts/welcome/</link>
+      <link>//localhost:1313/posts/welcome/</link>
       <pubDate>Fri, 10 May 2024 23:06:51 +0200</pubDate>
-      <guid>http://localhost:1313/posts/welcome/</guid>
+      <guid>//localhost:1313/posts/welcome/</guid>
       <description>A brief introduction of me and what can you gain from this blog Although probably nobody would read this except some close people who already know me well. But let&amp;rsquo;s goo.&#xA;I do theoretical computer science and my university is very much focused on research on combinatorics and graph theory. So I also to do my bachelor thesis on a topic related to graph theory. It&amp;rsquo;s about Hadwiger&amp;rsquo;s conjecture a generalization of 4 color theorem which was proved in 1976 using computers.</description>
     </item>
   </channel>
