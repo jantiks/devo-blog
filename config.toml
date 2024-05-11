@@ -6,7 +6,7 @@ theme = "paper"
 [params]
   author = "Tigran Arsenyan"
   description = "A blog created with Hugo Paper theme"
-  dateFormat = "2006-01-02"
+  dateFormat = "02 Jan 2006"
   showAuthor = true
   showWordCount = true
 
