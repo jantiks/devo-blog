@@ -2,7 +2,7 @@
 title = 'Introduction'
 subtitle = 'A brief introduction of me and what can you gain from this blog'
 date = 2024-05-10T23:06:51+02:00
-draft = true
+draft = false
 +++
 
 ## A brief introduction of me and what can you gain from this blog
