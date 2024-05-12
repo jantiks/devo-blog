@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on devo</title>
+    <link>//localhost:1313/tags/math/</link>
+    <description>Recent content in Math on devo</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 May 2024 13:26:47 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generating functions</title>
+      <link>//localhost:1313/blog/generatingfunctions/</link>
+      <pubDate>Sun, 12 May 2024 13:26:47 +0200</pubDate>
+      <guid>//localhost:1313/blog/generatingfunctions/</guid>
+      <description>Formally: The generating function of an infinite sequence $(a_0, a_1, \ldots)$ is represented by the power series: $$ \sum_{n=0}^\infty a_nx^n $$&#xA;Informally: Consider a sequence of numbers $(a_0, a_1, \ldots)$. We want to encode this sequence within a function, expressed as: $$ a_0x^0 + a_1x^1 + a_2x^2 + \ldots + a_nx^n = \displaystyle\sum_{n=0}^\infty a_nx^n $$&#xA;Example of Sequence $(1, 1, 1, 1, \ldots )$: $$ 1x^0 + 1x^1 + 1x^2 + \ldots + 1x^n = \displaystyle\sum_{n=0}^\infty x^n = \frac{1}{1 - x} $$</description>
+    </item>
+  </channel>
+</rss>

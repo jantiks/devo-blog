@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>devo</title>
-    <link>//localhost:1313/</link>
-    <description>Recent content on devo</description>
+    <title>Blogs on devo</title>
+    <link>//localhost:1313/blog/</link>
+    <description>Recent content in Blogs on devo</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 May 2024 13:26:47 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Generating functions</title>
       <link>//localhost:1313/blog/generatingfunctions/</link>
       <pubDate>Sun, 12 May 2024 13:26:47 +0200</pubDate>
       <guid>//localhost:1313/blog/generatingfunctions/</guid>
       <description>Formally: The generating function of an infinite sequence $(a_0, a_1, \ldots)$ is represented by the power series: $$ \sum_{n=0}^\infty a_nx^n $$&#xA;Informally: Consider a sequence of numbers $(a_0, a_1, \ldots)$. We want to encode this sequence within a function, expressed as: $$ a_0x^0 + a_1x^1 + a_2x^2 + \ldots + a_nx^n = \displaystyle\sum_{n=0}^\infty a_nx^n $$&#xA;Example of Sequence $(1, 1, 1, 1, \ldots )$: $$ 1x^0 + 1x^1 + 1x^2 + \ldots + 1x^n = \displaystyle\sum_{n=0}^\infty x^n = \frac{1}{1 - x} $$</description>
-    </item>
-    <item>
-      <title>CV</title>
-      <link>//localhost:1313/cv/</link>
-      <pubDate>Fri, 10 May 2024 23:54:05 +0200</pubDate>
-      <guid>//localhost:1313/cv/</guid>
-      <description>Summary Dynamic and innovative iOS Developer with over 4 years of experience in designing and building user-centric mobile applications. Expertise in Swift, Python, and JavaScript, with a solid foundation in UI/UX design principles. Adept at leading development teams and projects, as demonstrated by successful app launches and significant improvements in app performance metrics. Committed to leveraging the latest technologies to deliver exceptional user experiences.&#xA;Technical Skills Languages: Swift (4 years), Python (1 year), JavaScript (1 year), C++ Development Software: Xcode (4 years), Git (4 years) Technologies: RESTful services (4 years), UIKit (4 years), SwiftUI (2 years), HealthKit, StoreKit, AVFoundation, AVKit, FastAPI, NodeJS Platforms: Mac OS (10+ years), UNIX/Linux (5 years) Cloud Services: Firebase (Cloud Functions, Firestore Database, Realtime Database, Crashlytics) Work Experience Sr.</description>
     </item>
     <item>
       <title>Introduction</title>
