@@ -26,3 +26,9 @@ theme = "paper"
   name = "CV"
   url = "/cv/"
   weight = 2
+
+  
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 3
