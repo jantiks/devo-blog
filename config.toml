@@ -17,7 +17,7 @@ theme = "paper"
   # home page profile
   avatar = 'HAVATAR_EMAIL'                 # gravatar email or image url
   name = 'Tigran'
-  bio = "This is my personal blog. I am an iOS developer and a bachelor's student studying theoretical computer science at Charles University."
+  bio = "Personal blog. I am an iOS developer and a bachelor's student studying theoretical computer science at Charles University."
 
 
 
