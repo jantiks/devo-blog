@@ -1,10 +1,10 @@
 +++
 title = 'Generating functions'
-description = "ASD HELLO"
+description = "Introduction to generating functions and their applications in combinatorics"
 date = 2024-05-12T13:26:47+02:00
 tags = ["Math", "Combinatorics"]
 draft = false
-math = true
+author = ["Tigran Arsenyan"]
 +++
 
 

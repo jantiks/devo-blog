@@ -1,7 +1,7 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'devo'
-theme = "paper"
+theme = "PaperMod"
 
 [params]
   author = "Tigran Arsenyan"
@@ -9,26 +9,47 @@ theme = "paper"
   dateFormat = "02 Jan 2006"
   showAuthor = true
   showWordCount = true
+  math = true
 
   # header social icons
-  github = 'jantiks' 
-  linkedin = 'tigran-arsenyan-754bb71b6'
+  [[params.socialIcons]]
+    name = "github"
+    url = 'https://github.com/jantiks' 
+    
+  [[params.socialIcons]]  
+    name = "linkedin"
+    url = 'https://www.linkedin.com/in/tigran-arsenyan-754bb71b6/'
 
   # home page profile
-  avatar = 'HAVATAR_EMAIL'                 # gravatar email or image url
-  name = 'Tigran'
-  bio = "Personal blog. I am an iOS developer and a bachelor's student studying theoretical computer science at Charles University."
+  [params.homeInfoParams]
+    avatar = 'HAVATAR_EMAIL'                 # gravatar email or image url
+    Title = 'Tigran'
+    Content = "Personal blog. I am an iOS developer and a bachelor's student studying theoretical computer science at Charles University."
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
 
 
 
+  
+[[menu.main]]
+  name = "Archive"
+  url = "/archives/"
+  weight = 3
 
 [[menu.main]]
   name = "CV"
   url = "/cv/"
-  weight = 2
+  weight = 3
 
-  
 [[menu.main]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Tags"
+  url = "/tags"
   weight = 3
