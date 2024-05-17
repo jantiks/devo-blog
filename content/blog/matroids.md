@@ -33,13 +33,13 @@ Now, you may rightfully ask, what is an example of Independent system which is n
 Let graph $G = (V, E)$ where $V$ is the set of vertices and $E$ is the set of edges, Let's take $(E, F)$ where $E$(Ground set) is $E(G)$ and each element of $F$ is a matching in $G$.
 $(E, F)$ is a Independent system but not Matroid, because:
 - **(A1)** $\empty \in F$
-- **(A2)** Take matching $Y \in F$, then $\forall X \sub Y: X \in F$, because all subsets of $Y$ are also matchings in G
+- **(A2)** Take matching $Y \in F$, then $\forall X \subseteq Y: X \in F$, because all subsets of $Y$ are also matchings in G
 - **(A3)** Doesn't hold: Take G := $C_4$ and perfect matching $M_1$, and any non empty other matching $M_2$ of $C_4$ such that $M_1 \cap M_2 \neq \empty$, then take any edge edge from $M_1$ and add to $M_2$ it won't be a matching. Hence (A3) doesn't hold, and $(E, F)$ is an Independent set (A1 and A2 holds), but not a matroid.
 {{</ collapse >}}
 ---
 
 ### Some practice with matroids
-**Problem:** Let $(E, F)$ be a matroid, $E^\prime \cup E$ and $F^\prime = \\{ I \cap E^\prime | I \in F \\}$, prove that $(E^\prime, F^\prime)$ is also a matroid.
+**Problem:** Let $(E, F)$ be a matroid, $E^\prime \subseteq E$ and $F^\prime = \\{ I \cap E^\prime | I \in F \\}$, prove that $(E^\prime, F^\prime)$ is also a matroid.
 
 Think of a soltuion for 5 minutes.
 
