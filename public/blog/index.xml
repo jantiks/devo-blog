@@ -13,8 +13,8 @@
       <link>//localhost:1313/blog/matroids/</link>
       <pubDate>Wed, 15 May 2024 21:24:35 +0200</pubDate>
       <guid>//localhost:1313/blog/matroids/</guid>
-      <description>Matroid is a structure $(E, F)$ where $E$ and $F$are sets and elements of $E$ are &amp;lsquo;building&amp;rsquo; the set $F$, which has the following properties:
-(A1): $\empty \in F$ (A2): If $X \subseteq Y$ and $Y \in F$ then $X \in F$ (A3): Let $X, Y \in F$ and $|X| &amp;lt; |Y|$ then $\exists y \in Y \ X$ such that $X \cup \ {y} \in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets</description>
+      <description>Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are &amp;lsquo;building&amp;rsquo; the set $F$, which has the following properties:
+(A1): $\empty \in F$ (A2): If $X \subseteq Y$ and $Y \in F$ then $X \in F$ (A3): Let $X, Y \in F$ and $|X| &amp;lt; |Y|$ then $\exists y \in Y \backslash X$ such that $X \cup \ \{y\} \in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets</description>
     </item>
     <item>
       <title>Generating functions</title>
@@ -28,8 +28,7 @@
       <link>//localhost:1313/blog/introduction/</link>
       <pubDate>Fri, 10 May 2024 23:06:51 +0200</pubDate>
       <guid>//localhost:1313/blog/introduction/</guid>
-      <description>A brief introduction of me and what can you gain from this blog Although probably nobody would read this except some close people who already know me well. But let&amp;rsquo;s goo.
-I do theoretical computer science and my university is very much focused on research on combinatorics and graph theory. So I also to do my bachelor thesis on a topic related to graph theory. It&amp;rsquo;s about Hadwiger&amp;rsquo;s conjecture a generalization of 4 color theorem which was proved in 1976 using computers.</description>
+      <description>A brief introduction of me and what can you gain from this blog</description>
     </item>
   </channel>
 </rss>

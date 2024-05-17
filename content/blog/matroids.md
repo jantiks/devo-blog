@@ -1,9 +1,8 @@
 +++
 title = 'What is a Matroid?'
 date = 2024-05-15T21:24:35+02:00
-author = ["Tigran Arsenyan"]
+author = "Tigran Arsenyan"
 draft = false
-math = true
 tags = ["Math", "Combinatorial Optimization"]
 comments = true
 +++

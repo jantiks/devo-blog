@@ -4,7 +4,7 @@ description = "Introduction to generating functions and their applications in co
 date = 2024-05-12T13:26:47+02:00
 tags = ["Math", "Combinatorics"]
 draft = false
-author = ["Tigran Arsenyan"]
+author = "Tigran Arsenyan"
 +++
 
 
