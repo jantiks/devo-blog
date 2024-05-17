@@ -1,7 +1,215 @@
-<!doctype html><html lang=en dir=auto><head><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blogs","item":"/blog/"}]}</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css integrity=sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js integrity=sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:!0},{left:"$$",right:"$$",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=/ accesskey=h title="devo (Alt + H)">devo</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=/archives/ title=Archive><span>Archive</span></a></li><li><a href=/cv/ title=CV><span>CV</span></a></li><li><a href=/tags title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><header class=page-header><h1>Blogs</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>What is a Matroid?</h2></header><div class=entry-content><p>Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are ‘building’ the set $F$, which has the following properties:
-(A1): $\empty \in F$ (A2): If $X \subseteq Y$ and $Y \in F$ then $X \in F$ (A3): Let $X, Y \in F$ and $|X| &lt; |Y|$ then $\exists y \in Y \backslash X$ such that $X \cup \ \{y\} \in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets...</p></div><footer class=entry-footer><span title='2024-05-15 21:24:35 +0200 CEST'>15 May 2024</span>&nbsp;·&nbsp;671 words&nbsp;·&nbsp;Tigran Arsenyan</footer><a class=entry-link aria-label="post link to What is a Matroid?" href=/blog/matroids/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Generating functions</h2></header><div class=entry-content><p>Formally: The generating function of an infinite sequence $(a_0, a_1, \ldots)$ is represented by the power series: $$ \sum_{n=0}^\infty a_nx^n $$ Informally: Consider a sequence of numbers $(a_0, a_1, \ldots)$. We want to encode this sequence within a function, expressed as: $$ a_0x^0 + a_1x^1 + a_2x^2 + \ldots + a_nx^n = \displaystyle\sum_{n=0}^\infty a_nx^n $$ Example of Sequence $(1, 1, 1, 1, \ldots )$: $$ 1x^0 + 1x^1 + 1x^2 + \ldots + 1x^n = \displaystyle\sum_{n=0}^\infty x^n = \frac{1}{1 - x} $$ You may ask why the equation $\displaystyle\sum_{n=0}^\infty x^n = \frac{1}{1 - x}$ holds....</p></div><footer class=entry-footer><span title='2024-05-12 13:26:47 +0200 CEST'>12 May 2024</span>&nbsp;·&nbsp;528 words&nbsp;·&nbsp;Tigran Arsenyan</footer><a class=entry-link aria-label="post link to Generating functions" href=/blog/generatingfunctions/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Introduction</h2></header><div class=entry-content><p>A brief introduction of me and what can you gain from this blog Although probably nobody would read this except some close people who already know me well. But let’s goo.
-I do theoretical computer science and my university is very much focused on research on combinatorics and graph theory. So I also to do my bachelor thesis on a topic related to graph theory. It’s about Hadwiger’s conjecture a generalization of 4 color theorem which was proved in 1976 using computers....</p></div><footer class=entry-footer><span title='2024-05-10 23:06:51 +0200 CEST'>10 May 2024</span>&nbsp;·&nbsp;228 words&nbsp;·&nbsp;Tigran Arsenyan</footer><a class=entry-link aria-label="post link to Introduction" href=/blog/introduction/></a></article></main><footer class=footer><span>&copy; 2024 <a href=/>devo</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "//localhost:1313/blog/"
+    }
+  ]
+}
+</script>
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '\\(', right: '\\)', display: false},  
+        {left: '$', right: '$', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+    
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="devo (Alt + H)">devo</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/cv/" title="CV">
+                    <span>CV</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Blogs
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">What is a Matroid?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are ‘building’ the set $F$, which has the following properties:
+(A1): $\empty \in F$ (A2): If $X \subseteq Y$ and $Y \in F$ then $X \in F$ (A3): Let $X, Y \in F$ and $|X| &lt; |Y|$ then $\exists y \in Y \backslash X$ such that $X \cup \ \{y\} \in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-15 21:24:35 +0200 CEST'>15 May 2024</span>&nbsp;·&nbsp;671 words&nbsp;·&nbsp;Tigran Arsenyan</footer>
+  <a class="entry-link" aria-label="post link to What is a Matroid?" href="//localhost:1313/blog/matroids/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Generating functions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Formally: The generating function of an infinite sequence $(a_0, a_1, \ldots)$ is represented by the power series: $$ \sum_{n=0}^\infty a_nx^n $$ Informally: Consider a sequence of numbers $(a_0, a_1, \ldots)$. We want to encode this sequence within a function, expressed as: $$ a_0x^0 &#43; a_1x^1 &#43; a_2x^2 &#43; \ldots &#43; a_nx^n = \displaystyle\sum_{n=0}^\infty a_nx^n $$ Example of Sequence $(1, 1, 1, 1, \ldots )$: $$ 1x^0 &#43; 1x^1 &#43; 1x^2 &#43; \ldots &#43; 1x^n = \displaystyle\sum_{n=0}^\infty x^n = \frac{1}{1 - x} $$ You may ask why the equation $\displaystyle\sum_{n=0}^\infty x^n = \frac{1}{1 - x}$ holds....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-12 13:26:47 +0200 CEST'>12 May 2024</span>&nbsp;·&nbsp;528 words&nbsp;·&nbsp;Tigran Arsenyan</footer>
+  <a class="entry-link" aria-label="post link to Generating functions" href="//localhost:1313/blog/generatingfunctions/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Introduction
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A brief introduction of me and what can you gain from this blog Although probably nobody would read this except some close people who already know me well. But let’s goo.
+I do theoretical computer science and my university is very much focused on research on combinatorics and graph theory. So I also to do my bachelor thesis on a topic related to graph theory. It’s about Hadwiger’s conjecture a generalization of 4 color theorem which was proved in 1976 using computers....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-10 23:06:51 +0200 CEST'>10 May 2024</span>&nbsp;·&nbsp;228 words&nbsp;·&nbsp;Tigran Arsenyan</footer>
+  <a class="entry-link" aria-label="post link to Introduction" href="//localhost:1313/blog/introduction/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="//localhost:1313/">devo</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
