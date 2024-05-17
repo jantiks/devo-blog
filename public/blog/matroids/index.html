@@ -1,79 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>What is a Matroid? | devo</title>
+<meta name="keywords" content="Math, Combinatorial Optimization">
+<meta name="description" content="Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are &lsquo;building&rsquo; the set $F$, which has the following properties:
+(A1): $\empty \in F$ (A2): If $X \subseteq Y$ and $Y \in F$ then $X \in F$ (A3): Let $X, Y \in F$ and $|X| &lt; |Y|$ then $\exists y \in Y \backslash X$ such that $X \cup \ \{y\} \in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets">
+<meta name="author" content="Tigran Arsenyan">
+<link rel="canonical" href="//localhost:1313/blog/matroids/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/blog/matroids/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Blogs",
-      "item": "//localhost:1313/blog/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "What is a Matroid?",
-      "item": "//localhost:1313/blog/matroids/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "What is a Matroid?",
-  "name": "What is a Matroid?",
-  "description": "Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are \u0026lsquo;building\u0026rsquo; the set $F$, which has the following properties:\n(A1): $\\empty \\in F$ (A2): If $X \\subseteq Y$ and $Y \\in F$ then $X \\in F$ (A3): Let $X, Y \\in F$ and $|X| \u0026lt; |Y|$ then $\\exists y \\in Y \\backslash X$ such that $X \\cup \\ \\{y\\} \\in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets",
-  "keywords": [
-    "Math", "Combinatorial Optimization"
-  ],
-  "articleBody": "Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are ‘building’ the set $F$, which has the following properties:\n(A1): $\\empty \\in F$ (A2): If $X \\subseteq Y$ and $Y \\in F$ then $X \\in F$ (A3): Let $X, Y \\in F$ and $|X| \u003c |Y|$ then $\\exists y \\in Y \\backslash X$ such that $X \\cup \\ \\{y\\} \\in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets\nExample Ground set $E$: Finite set of n elements Independent sets $F$ All subsets of $E$ that contain no more than k ($k \u003c= n$) elements. So let:\n$E := \\{1, 2, 3, 4, 5, 6, 7\\}$. $k = 3$ Then: $F = \\{\\empty, \\{1\\}, \\{2\\}, \\{3\\}, \\{1, 2\\}, \\{1, 3\\}, \\{2, 3\\}, \\{1, 2, 3\\}\\}$ Independent System If you have $(E, F)$ such that only (A1) and (A2) hold, then $(E, F)$ is called Independent system.\nNow, you may rightfully ask, what is an example of Independent system which is not a Matriod?\nAnswer: Let graph $G = (V, E)$ where $V$ is the set of vertices and $E$ is the set of edges, Let’s take $(E, F)$ where $E$(Ground set) is $E(G)$ and each element of $F$ is a matching in $G$. $(E, F)$ is a Independent system but not Matroid, because:\n(A1) $\\empty \\in F$ (A2) Take matching $Y \\in F$, then $\\forall X \\sub Y: X \\in F$, because all subsets of $Y$ are also matchings in G (A3) Doesn’t hold: Take G := $C_4$ and perfect matching $M_1$, and any non empty other matching $M_2$ of $C_4$ such that $M_1 \\cap M_2 \\neq \\empty$, then take any edge edge from $M_1$ and add to $M_2$ it won’t be a matching. Hence (A3) doesn’t hold, and $(E, F)$ is an Independent set (A1 and A2 holds), but not a matroid. Some practice with matroids Problem: Let $(E, F)$ be a matroid, $E^\\prime \\cup E$ and $F^\\prime = \\{ I \\cap E^\\prime | I \\in F \\}$, prove that $(E^\\prime, F^\\prime)$ is also a matroid.\nThink of a soltuion for 5 minutes.\nAnswer: To prove $(E^\\prime, F^\\prime)$ is a matroid, we should prove that it holds the 3 properties of the matroid: (A1, A2, A3):\nA1: Since $\\empty \\in F$, for $I := \\empty$, $I \\cap E^\\prime = \\empty$ hence $\\empty \\in F^\\prime$., so A1 holds A2: We should show that $\\forall X^\\prime \\in F^\\prime$, all subsets of $X$ are also in $F^\\prime$. Take $X^\\prime \\in F^\\prime$, for some $I \\in F$, $X^\\prime = I \\cap E^\\prime$ and $I \\cap E^\\prime \\in F$, hence $X^\\prime \\in F$ as well, this implies that all subsets of $X^\\prime$ are also elements $F$(Because $(E, F)$ is a matroid), hence all subsets of $X^\\prime$ are also elements of $F^\\prime$ A3: let’s prove it by contradiction: Which means, for an $X,Y \\in F^\\prime$ s.t $|X| \u003e |Y|$, $\\forall x \\in X \\backslash Y | (Y \\cap \\{x\\})\\notin F^\\prime$, from the proof of A2 we know that for some $I_x \\in F$ such that $X = I_x \\cap E^\\prime$, $(I_x \\cap E^\\prime) \\in F$, similar for some $I_y$ and $Y$. This means that $|I_x \\cap E^\\prime| \u003e |I_y \\cap E^\\prime|$, and property A3 holds for them, but this is contradiction, because if there is $x \\in ((I_x \\cap E^\\prime) \\backslash (I_y \\cap E^\\prime))$ such that $((I_y \\cap E^\\prime) \\cap \\{x\\} \\in F)$, then $(I_y \\cap E^\\prime) \\cap \\{x\\} \\in F^\\prime$ by definition of $F^\\prime$. Hence proving A3 Why should you care? Matroids give framework to prove the correctness of greedy algorithms. If a structure you want to maximize/minimize is a matroid, then you can use a greedy algorithm on it. Conversely if you can solve a problem using greedy algorithm, then the underlying structure must be a matroid.\nThis was a quick intro to matroids, structures in combinatorial optimization which can be seen in our daily life (if you are wondering where, then you just should look deeper 😄)\n",
-  "wordCount" : "671",
-  "inLanguage": "en",
-  "datePublished": "2024-05-15T21:24:35+02:00",
-  "dateModified": "2024-05-15T21:24:35+02:00",
-  "author":{
-    "@type": "Person",
-    "name": "Tigran Arsenyan"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "//localhost:1313/blog/matroids/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "devo",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "//localhost:1313/favicon.ico"
-    }
-  }
-}
-</script>
-    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '\\[', right: '\\]', display: true},   
-        {left: '$$', right: '$$', display: true},     
-        {left: '\\(', right: '\\)', display: false},  
-        {left: '$', right: '$', display: false},  
-      ],
-      throwOnError : false
-    });
-  });
-</script>
-    
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
 </head>
 
 <body class="" id="top">
