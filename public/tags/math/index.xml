@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Math on devo</title>
-    <link>//localhost:1313/tags/math/</link>
+    <link>/tags/math/</link>
     <description>Recent content in Math on devo</description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2024 21:24:35 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is a Matroid?</title>
-      <link>//localhost:1313/blog/matroids/</link>
+      <link>/blog/matroids/</link>
       <pubDate>Wed, 15 May 2024 21:24:35 +0200</pubDate>
-      <guid>//localhost:1313/blog/matroids/</guid>
+      <guid>/blog/matroids/</guid>
       <description>Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are &amp;lsquo;building&amp;rsquo; the set $F$, which has the following properties:
 (A1): $\empty \in F$ (A2): If $X \subseteq Y$ and $Y \in F$ then $X \in F$ (A3): Let $X, Y \in F$ and $|X| &amp;lt; |Y|$ then $\exists y \in Y \backslash X$ such that $X \cup \ \{y\} \in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets</description>
     </item>
     <item>
       <title>Generating functions</title>
-      <link>//localhost:1313/blog/generatingfunctions/</link>
+      <link>/blog/generatingfunctions/</link>
       <pubDate>Sun, 12 May 2024 13:26:47 +0200</pubDate>
-      <guid>//localhost:1313/blog/generatingfunctions/</guid>
+      <guid>/blog/generatingfunctions/</guid>
       <description>Introduction to generating functions and their applications in combinatorics</description>
     </item>
   </channel>
