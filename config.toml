@@ -1,7 +1,7 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'devo'
-theme = "PaperMod"
+theme = ["PaperMod"]
 
 [params]
   author = "Tigran Arsenyan"
