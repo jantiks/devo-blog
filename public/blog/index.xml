@@ -6,8 +6,22 @@
     <description>Recent content in Blogs on devo</description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2024 21:24:35 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 12 Oct 2024 08:28:24 +0200</lastBuildDate>
     <atom:link href="//localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dinitz Algorithm</title>
+      <link>//localhost:1313/blog/dinitzalgorithm/</link>
+      <pubDate>Sat, 12 Oct 2024 08:28:24 +0200</pubDate>
+      <guid>//localhost:1313/blog/dinitzalgorithm/</guid>
+      <description>Dinitz algorithm and it&amp;#39;s applications for special graphs</description>
+    </item>
+    <item>
+      <title>The binomial coefficient</title>
+      <link>//localhost:1313/blog/binomialcoefficient/</link>
+      <pubDate>Sun, 25 Aug 2024 18:18:04 +0100</pubDate>
+      <guid>//localhost:1313/blog/binomialcoefficient/</guid>
+      <description>Intuition behind binomial coefficient</description>
+    </item>
     <item>
       <title>What is a Matroid?</title>
       <link>//localhost:1313/blog/matroids/</link>

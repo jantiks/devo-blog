@@ -44,7 +44,7 @@ $(E, F)$ is a Independent system but not Matroid, because:
 Think of a soltuion for 5 minutes.
 
 > {{< collapse summary="**Answer:**" >}}
-To prove $(E^\prime, F^\prime)$ is a matroid, we should prove that it holds the 3 properties of the matroid: (A1, A2, A3):
+To prove $(E^\prime, F^\prime)$ is a matroid, we should prove that the 3 properties of the matroid hold: (A1, A2, A3):
 - **A1:** Since $\empty \in F$, for $I := \empty$, $I \cap E^\prime = \empty$ hence  $\empty \in F^\prime$., so **A1** holds
 - **A2:** We should show that $\forall X^\prime \in F^\prime$, all subsets of $X$ are also in $F^\prime$. Take $X^\prime \in F^\prime$, for some $I \in F$, $X^\prime = I \cap E^\prime$ and $I \cap E^\prime \in F$, hence $X^\prime \in F$ as well, this implies that all subsets of $X^\prime$ are also elements $F$(Because $(E, F)$ is a matroid), hence all subsets of $X^\prime$ are also elements of $F^\prime$
 - **A3:** let's prove it by contradiction: Which means, for an $X,Y \in F^\prime$ s.t $|X| > |Y|$, $\forall x \in X \backslash Y | (Y \cup \\{x\\})\notin F^\prime$, from the proof of **A2** we know that for some $I_x \in F$ such that $X = I_x \cap E^\prime$, $(I_x \cap E^\prime) \in F$, similar for some $I_y$ and $Y$. This means that $|I_x \cap E^\prime| > |I_y \cap E^\prime|$, and property **A3** holds for them, but this is contradiction, because if there is $x \in ((I_x \cap E^\prime) \backslash (I_y \cap E^\prime))$ such that $((I_y \cap E^\prime) \cup \\{x\\} \in F)$, then $(I_y \cap E^\prime) \cup \\{x\\} \in F^\prime$ by definition of $F^\prime$. Hence proving **A3**

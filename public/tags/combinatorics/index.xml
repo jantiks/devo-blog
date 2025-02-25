@@ -6,8 +6,15 @@
     <description>Recent content in Combinatorics on devo</description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 May 2024 13:26:47 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 25 Aug 2024 18:18:04 +0100</lastBuildDate>
     <atom:link href="//localhost:1313/tags/combinatorics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The binomial coefficient</title>
+      <link>//localhost:1313/blog/binomialcoefficient/</link>
+      <pubDate>Sun, 25 Aug 2024 18:18:04 +0100</pubDate>
+      <guid>//localhost:1313/blog/binomialcoefficient/</guid>
+      <description>Intuition behind binomial coefficient</description>
+    </item>
     <item>
       <title>Generating functions</title>
       <link>//localhost:1313/blog/generatingfunctions/</link>

@@ -144,6 +144,41 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Dinitz Algorithm
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Before we get into the Dinitz algorithm let’s use a switched definition for flows which lets an easier design of algorithms.
+Definition (Effective flow): For a flow $f$ we define effective flow as: $f^{*} : E \rightarrow R$, where:
+$f^{*}(uv) := f(uv) - f(vu)$
+Let’s observe some properties of $f^{*}$
+$$f^{*}(uv) = -f^{*}(vu)$$ $$f^{*}(uv) \leq c(uv)$$ (2) holds because $f^{*}(uv)$ is bounded by $c(uv)$ By combining both (1) and (2): $$f^{*}(uv) \geq -c(vu)$$ $\forall v \in V(G)$ such that $v \neq s,t$, $\sum_{(u,v) \in E} f^{*}(uv) = 0$ Lemma: For every effective flow $f^{*}$ satisfying (1), (2), (4), there exists a corresponding flow f...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-12 08:28:24 +0200 CEST'>12 Oct 2024</span>&nbsp;·&nbsp;199 words&nbsp;·&nbsp;Tigran Arsenyan</footer>
+  <a class="entry-link" aria-label="post link to Dinitz Algorithm" href="//localhost:1313/blog/dinitzalgorithm/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The binomial coefficient
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The binomial coefficient denoted by $n \choose k$ is the number of ways to choose k objects from n objects. Its formula is the following: $n \choose k$ = $\frac{n!}{k!(n-k)!}$, why is this even the case? How did people come up with this? Let us find out together.
+So we want to find the number of ways we can pick $k$ objects our of $n$ objects, let’s say we have the set $\{1,2,3, …, n\}$, and we are trying to pick $k$ of them and if $k = 2$ it doesn’t matter we pick 1,2 or 2,1 those are the same, which basically means we don’t care about the ordering of choice....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-25 18:18:04 +0100 +0100'>25 Aug 2024</span>&nbsp;·&nbsp;309 words&nbsp;·&nbsp;Tigran Arsenyan</footer>
+  <a class="entry-link" aria-label="post link to The binomial coefficient" href="//localhost:1313/blog/binomialcoefficient/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">What is a Matroid?
     </h2>
   </header>
@@ -151,7 +186,7 @@
     <p>Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are ‘building’ the set $F$, which has the following properties:
 (A1): $\empty \in F$ (A2): If $X \subseteq Y$ and $Y \in F$ then $X \in F$ (A3): Let $X, Y \in F$ and $|X| &lt; |Y|$ then $\exists y \in Y \backslash X$ such that $X \cup \ \{y\} \in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-15 21:24:35 +0200 CEST'>15 May 2024</span>&nbsp;·&nbsp;671 words&nbsp;·&nbsp;Tigran Arsenyan</footer>
+  <footer class="entry-footer"><span title='2024-05-15 21:24:35 +0200 CEST'>15 May 2024</span>&nbsp;·&nbsp;670 words&nbsp;·&nbsp;Tigran Arsenyan</footer>
   <a class="entry-link" aria-label="post link to What is a Matroid?" href="//localhost:1313/blog/matroids/"></a>
 </article>
 
@@ -182,7 +217,7 @@ I do theoretical computer science and my university is very much focused on rese
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="//localhost:1313/">devo</a></span> · 
+        <span>&copy; 2025 <a href="//localhost:1313/">devo</a></span> · 
 
     <span>
         Powered by

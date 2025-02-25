@@ -5,12 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>What is a Matroid? | devo</title>
-<meta name="keywords" content="Math, Combinatorial Optimization">
-<meta name="description" content="Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are &lsquo;building&rsquo; the set $F$, which has the following properties:
-(A1): $\empty \in F$ (A2): If $X \subseteq Y$ and $Y \in F$ then $X \in F$ (A3): Let $X, Y \in F$ and $|X| &lt; |Y|$ then $\exists y \in Y \backslash X$ such that $X \cup \ \{y\} \in F$ If $M$ is a matroid, then $E$ is called the ground set, elements of $F$ independent sets">
+<title>The binomial coefficient | devo</title>
+<meta name="keywords" content="Math, Combinatorics">
+<meta name="description" content="Intuition behind binomial coefficient">
 <meta name="author" content="Tigran Arsenyan">
-<link rel="canonical" href="//localhost:1313/blog/matroids/">
+<link rel="canonical" href="//localhost:1313/blog/binomialcoefficient/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
@@ -19,7 +18,7 @@
 <link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//localhost:1313/blog/matroids/">
+<link rel="alternate" hreflang="en" href="//localhost:1313/blog/binomialcoefficient/">
 <noscript>
     <style>
         #theme-toggle,
@@ -141,71 +140,20 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      What is a Matroid?
+      The binomial coefficient
     </h1>
-    <div class="post-meta"><span title='2024-05-15 21:24:35 +0200 CEST'>15 May 2024</span>&nbsp;·&nbsp;670 words&nbsp;·&nbsp;Tigran Arsenyan
+    <div class="post-description">
+      Intuition behind binomial coefficient
+    </div>
+    <div class="post-meta"><span title='2024-08-25 18:18:04 +0100 +0100'>25 Aug 2024</span>&nbsp;·&nbsp;309 words&nbsp;·&nbsp;Tigran Arsenyan
 
 </div>
   </header> 
-  <div class="post-content"><p>Matroid is a structure $(E, F)$ where $E$ and $F$ are sets and elements of $E$ are &lsquo;building&rsquo; the set $F$, which has the following properties:</p>
-<ul>
-<li><strong>(A1):</strong> $\empty \in F$</li>
-<li><strong>(A2):</strong> If $X \subseteq Y$ and $Y \in F$ then $X \in F$</li>
-<li><strong>(A3):</strong> Let $X, Y \in F$ and $|X| &lt; |Y|$ then $\exists y \in Y \backslash X$ such that $X \cup \ \{y\} \in F$</li>
-</ul>
-<p>If $M$ is a matroid, then $E$ is called the <code>ground set</code>, elements of $F$ <code>independent sets</code></p>
-<h3 id="example">Example<a hidden class="anchor" aria-hidden="true" href="#example">#</a></h3>
-<ul>
-<li><strong>Ground set $E$</strong>: Finite set of n elements</li>
-<li><strong>Independent sets $F$</strong> All subsets of $E$ that contain no more than k ($k &lt;= n$) elements.</li>
-</ul>
-<p>So let:</p>
-<ul>
-<li>$E :=  \{1, 2, 3, 4, 5, 6, 7\}$.</li>
-<li>$k = 3$</li>
-<li>Then: $F = \{\empty, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}$</li>
-</ul>
-<h3 id="independent-system">Independent System<a hidden class="anchor" aria-hidden="true" href="#independent-system">#</a></h3>
-<p>If you have $(E, F)$ such that only <strong>(A1)</strong> and <strong>(A2)</strong> hold, then $(E, F)$ is called Independent system.</p>
-<p>Now, you may rightfully ask, what is an example of Independent system which is not a Matriod?</p>
-<blockquote>
-
-
-<p><details >
-  <summary markdown="span"><strong>Answer:</strong></summary>
-  <p>Let graph $G = (V, E)$ where $V$ is the set of vertices and $E$ is the set of edges, Let&rsquo;s take $(E, F)$ where $E$(Ground set) is $E(G)$ and each element of $F$ is a matching in $G$.
-$(E, F)$ is a Independent system but not Matroid, because:</p>
-<ul>
-<li><strong>(A1)</strong> $\empty \in F$</li>
-<li><strong>(A2)</strong> Take matching $Y \in F$, then $\forall X \subseteq Y: X \in F$, because all subsets of $Y$ are also matchings in G</li>
-<li><strong>(A3)</strong> Doesn&rsquo;t hold: Take G := $C_4$ and perfect matching $M_1$, and any non empty other matching $M_2$ of $C_4$ such that $M_1 \cap M_2 \neq \empty$, then take any edge edge from $M_1$ and add to $M_2$ it won&rsquo;t be a matching. Hence (A3) doesn&rsquo;t hold, and $(E, F)$ is an Independent set (A1 and A2 holds), but not a matroid.</li>
-</ul>
-</details></p>
-
-</blockquote>
-<hr>
-<h3 id="some-practice-with-matroids">Some practice with matroids<a hidden class="anchor" aria-hidden="true" href="#some-practice-with-matroids">#</a></h3>
-<p><strong>Problem:</strong> Let $(E, F)$ be a matroid, $E^\prime \subseteq E$ and $F^\prime = \{ I \cap E^\prime | I \in F \}$, prove that $(E^\prime, F^\prime)$ is also a matroid.</p>
-<p>Think of a soltuion for 5 minutes.</p>
-<blockquote>
-
-
-<p><details >
-  <summary markdown="span"><strong>Answer:</strong></summary>
-  <p>To prove $(E^\prime, F^\prime)$ is a matroid, we should prove that the 3 properties of the matroid hold: (A1, A2, A3):</p>
-<ul>
-<li><strong>A1:</strong> Since $\empty \in F$, for $I := \empty$, $I \cap E^\prime = \empty$ hence  $\empty \in F^\prime$., so <strong>A1</strong> holds</li>
-<li><strong>A2:</strong> We should show that $\forall X^\prime \in F^\prime$, all subsets of $X$ are also in $F^\prime$. Take $X^\prime \in F^\prime$, for some $I \in F$, $X^\prime = I \cap E^\prime$ and $I \cap E^\prime \in F$, hence $X^\prime \in F$ as well, this implies that all subsets of $X^\prime$ are also elements $F$(Because $(E, F)$ is a matroid), hence all subsets of $X^\prime$ are also elements of $F^\prime$</li>
-<li><strong>A3:</strong> let&rsquo;s prove it by contradiction: Which means, for an $X,Y \in F^\prime$ s.t $|X| &gt; |Y|$, $\forall x \in X \backslash Y | (Y \cup \{x\})\notin F^\prime$, from the proof of <strong>A2</strong> we know that for some $I_x \in F$ such that $X = I_x \cap E^\prime$, $(I_x \cap E^\prime) \in F$, similar for some $I_y$ and $Y$. This means that $|I_x \cap E^\prime| &gt; |I_y \cap E^\prime|$, and property <strong>A3</strong> holds for them, but this is contradiction, because if there is $x \in ((I_x \cap E^\prime) \backslash (I_y \cap E^\prime))$ such that $((I_y \cap E^\prime) \cup \{x\} \in F)$, then $(I_y \cap E^\prime) \cup \{x\} \in F^\prime$ by definition of $F^\prime$. Hence proving <strong>A3</strong></li>
-</ul>
-</details></p>
-
-</blockquote>
-<hr>
-<h3 id="why-should-you-care">Why should you care?<a hidden class="anchor" aria-hidden="true" href="#why-should-you-care">#</a></h3>
-<p>Matroids give framework to prove the correctness of <a href="https://en.wikipedia.org/wiki/Greedy_algorithm">greedy algorithms</a>. If a structure you want to maximize/minimize is a matroid, then you can use a greedy algorithm on it. Conversely if you can solve a problem using greedy algorithm, then the underlying structure must be a matroid.</p>
-<hr>
-<p>This was a quick intro to matroids, structures in combinatorial optimization which can be seen in our daily life (if you are wondering where, then you just should look deeper 😄)</p>
+  <div class="post-content"><p>The binomial coefficient denoted by $n \choose k$ is the number of ways to choose k objects from n objects. Its formula is the following: $n \choose k$ = $\frac{n!}{k!(n-k)!}$, why is this even the case? How did people come up with this? Let us find out together.</p>
+<p>So we want to find the number of ways we can pick $k$ objects our of $n$ objects, let&rsquo;s say we have the set $\{1,2,3, &hellip;, n\}$, and we are trying to pick $k$ of them and if $k = 2$ it doesn&rsquo;t matter we pick 1,2 or 2,1 those are the same, which basically means we don&rsquo;t care about the ordering of choice.</p>
+<p>So now let us derive the formula together.</p>
+<p>Suppose we are picking the $k$ objects by rounds, and in each round we pick only one element, so overall we have $k$ rounds, at round 1 we have $n$ objects to take, so we have n ways to take 1 object, at round 2 there are only left $n-1$ objects, so we have $n-1$ ways to pick an object, so at the end of round 2 we have $n*(n-1)$ ways to pick 2 objects out $n$, and with this way can continue this until $k+1$, hence the number of ways to pick $k$ objects out of $n$ would be $n(n-1)(n-2)* &hellip; *(n-k+1)$, which equals to $\frac{n!}{(n-k)!}$, the $(n-k)!$ fraction is just a nice way to cancel out all factors of $n!$ which come after $(n-k+1)$.</p>
+<p>The equation $\frac{n!}{(n-k)!}$ counts all the sequences of the $k$ objects we can choose, but we don&rsquo;t care about the different orderings of the same set of objects, so we have to count them out. And with similar reasoning, we have $k!$ possible sequences for each set of $k$ objects, hence we have to divide the forumla by $k!$, hence we get $\frac{n!}{k!(n-k)!}$</p>
 
 
   </div>
@@ -213,7 +161,7 @@ $(E, F)$ is a Independent system but not Matroid, because:</p>
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="//localhost:1313/tags/math/">Math</a></li>
-      <li><a href="//localhost:1313/tags/combinatorial-optimization/">Combinatorial Optimization</a></li>
+      <li><a href="//localhost:1313/tags/combinatorics/">Combinatorics</a></li>
     </ul>
   </footer>
 </article>

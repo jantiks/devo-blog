@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/tags/algorithms/</loc>
+    <lastmod>2024-10-12T08:28:24+02:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/blog/</loc>
-    <lastmod>2024-05-15T21:24:35+02:00</lastmod>
+    <lastmod>2024-10-12T08:28:24+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2024-10-12T08:28:24+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/dinitzalgorithm/</loc>
+    <lastmod>2024-10-12T08:28:24+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/graph-algorithms/</loc>
+    <lastmod>2024-10-12T08:28:24+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-10-12T08:28:24+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/combinatorics/</loc>
+    <lastmod>2024-08-25T18:18:04+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/math/</loc>
+    <lastmod>2024-08-25T18:18:04+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/binomialcoefficient/</loc>
+    <lastmod>2024-08-25T18:18:04+01:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/combinatorial-optimization/</loc>
     <lastmod>2024-05-15T21:24:35+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2024-05-15T21:24:35+02:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/math/</loc>
-    <lastmod>2024-05-15T21:24:35+02:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2024-05-15T21:24:35+02:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/blog/matroids/</loc>
     <lastmod>2024-05-15T21:24:35+02:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/combinatorics/</loc>
-    <lastmod>2024-05-12T13:26:47+02:00</lastmod>
   </url><url>
     <loc>//localhost:1313/blog/generatingfunctions/</loc>
     <lastmod>2024-05-12T13:26:47+02:00</lastmod>
